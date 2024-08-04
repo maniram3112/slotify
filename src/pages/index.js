@@ -1,9 +1,7 @@
-import SignIn from './LandingPage/SignIn';
-import SignUp from './LandingPage/SignUp';
+import LandingPage from './LandingPage/LandingPage';
 
 const pages = {
-    SignIn,
-    SignUp,
+    LandingPage,
 }
 
 export default pages;
