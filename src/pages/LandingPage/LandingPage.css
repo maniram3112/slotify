@@ -1,18 +1,58 @@
-.pageContainer{
+.landingPage {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pageImg{
     height: 100vh;
-    width: 100%;
 }
 
-.pageImg img{
-    width: 63%;
+.pageContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.pageImg {
     height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 70%;
+}
+
+.pageImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pageAuth {
+    width: 30%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f8f8f8;
+}
+
+.pageAuth img{
+    width: 45%;
+    height: auto;
+}
+
+.pageAuth-heading {
+    margin-bottom: 2rem;
+}
+
+.pageAuth-heading h1 {
+    text-align: center;
+    font-weight: 100;
+}
+
+.pageAuth-thirdParty {
+    margin-top: 2rem;
+}
+
+.thirdParty-heading {
+    margin-bottom: 1rem;
+}
+
+.thirdParty {
+    display: flex;
+    justify-content: space-around;
 }
