@@ -1,6 +1,7 @@
 .landingPage {
     display: flex;
     height: 100vh;
+    background-color: #f5f5f5;
 }
 
 .pageContainer {
@@ -11,7 +12,7 @@
 
 .pageImg {
     height: 100%;
-    width: 70%;
+    width: 60%;
 }
 
 .pageImg img {
@@ -21,18 +22,20 @@
 }
 
 .pageAuth {
-    width: 30%;
+    width: 40%;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    background-color: #f8f8f8;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 .pageAuth img{
-    width: 45%;
+    width: 30%;
     height: auto;
+    margin-bottom: 2rem;
 }
 
 .pageAuth-heading {
@@ -41,18 +44,110 @@
 
 .pageAuth-heading h1 {
     text-align: center;
-    font-weight: 100;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #333;
+}
+
+.pageAuth-cred{
+    width: 100%;
 }
 
 .pageAuth-thirdParty {
     margin-top: 2rem;
+    width: 100%;
+    text-align: center;
 }
 
 .thirdParty-heading {
     margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #666;
 }
 
 .thirdParty {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.icons{
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icons:hover{
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+.container{
+    width: 100%;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.forms input{
+    padding: 0.7rem;
+    font-size: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 75%;
+    transition: border-color 0.3s ease;
+}
+
+.forms input:focus{
+    border-color: #333;
+    outline: none;
+}
+
+.heading h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.heading h3{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.heading span{
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.heading span:hover{
+    color: #357ab8;
+}
+
+h4{
+    text-align: center;
+    color: #666;
+    margin-top: 1rem;
+}
+
+h4 span{
+    cursor: pointer;
+    color: #4a90e2;
+    transition: color 0.s ease;
+}
+
+h4 span:hover{
+    color: #357ab8;
 }

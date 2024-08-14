@@ -1,10 +1,11 @@
 import React from 'react';
 import { BsGoogle, BsInstagram, BsTwitterX } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
 import images from '../../assets';
 import './LandingPage.css';
+import SignIn from './SignIn/SignIn';
+import SignUp from './SignUp/SignUp';
 
-const LandingPage = () => {
+const LandingPage = ({authType = 'signin'}) => {
     return (
         <div className='landingPage'>
             <div className='pageContainer'>
@@ -18,18 +19,23 @@ const LandingPage = () => {
                     <div className='pageAuth-heading'>
                         <h1>Welcome to Slotify</h1>
                     </div>
-                    <div className='pageAuth-signIn'>
-                        <Link to="/signin" className='auth-link'/>
-                        <Link to="/signup" className='auth-link'/>
+                    <div className='pageAuth-cred'>
+                        {
+                            authType === 'signin'
+                                ?
+                                    <SignIn/>
+                                :
+                                    <SignUp/>
+                        }
                     </div>
                     <div className='pageAuth-thirdParty'>
                         <div className='thirdParty-heading'>
                             <h3>Or Sign In with</h3>
                         </div>
                         <div className='thirdParty'>
-                            <BsInstagram/>
-                            <BsGoogle/>
-                            <BsTwitterX/>
+                            <div className='icons'><BsInstagram/></div>
+                            <div className='icons'><BsGoogle/></div>
+                            <div className='icons'><BsTwitterX/></div>
                         </div>
                     </div>
                 </div>

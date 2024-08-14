@@ -1,21 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../LandingPage.css';
 
 const SignIn = () => {
     return (
-        <div className='signIn-container'>
+        <div className='container'>
             <div className='heading'>
                 <h2>Sign in to continue</h2>
                 <h3>Not a member yet?
-                    <Link to="/signup" className='auth-link'>
+                    <Link to="/signup">
                         <span>Register</span>
                     </Link>
                 </h3>
             </div>
-            <form className='signIn-form'>
+            <form className='forms'>
                 <input type='text' placeholder='Enter Your Acc Number' required/>
                 <input type='password' placeholder='Password' required/>
-                <button>Login In</button>
+                <button className='custom-btn'>Login In</button>
                 <h4>
                     <span>Forgot your password?</span>
                 </h4>
