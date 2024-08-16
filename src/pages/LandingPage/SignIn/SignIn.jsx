@@ -2,7 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../LandingPage.css';
 
-const SignIn = () => {
+const SignIn = ({onLogin}) => {
+
+    const handleSubmit = (target) => {
+        target.preventDefault();
+        onLogin();
+    }
+
     return (
         <div className='container'>
             <div className='heading'>
@@ -13,10 +19,10 @@ const SignIn = () => {
                     </Link>
                 </h3>
             </div>
-            <form className='forms'>
+            <form className='forms' onSubmit={handleSubmit}>
                 <input type='text' placeholder='Enter Your Acc Number' required/>
                 <input type='password' placeholder='Password' required/>
-                <button className='custom-btn'>Login In</button>
+                <button className='custom-btn' type='submit'>Login In</button>
                 <h4>
                     <span>Forgot your password?</span>
                 </h4>

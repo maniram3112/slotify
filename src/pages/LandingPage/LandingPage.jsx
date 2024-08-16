@@ -5,7 +5,7 @@ import './LandingPage.css';
 import SignIn from './SignIn/SignIn';
 import SignUp from './SignUp/SignUp';
 
-const LandingPage = ({authType = 'signin'}) => {
+const LandingPage = ({authType, onLogin}) => {
     return (
         <div className='landingPage'>
             <div className='pageContainer'>
@@ -23,9 +23,9 @@ const LandingPage = ({authType = 'signin'}) => {
                         {
                             authType === 'signin'
                                 ?
-                                    <SignIn/>
+                                    <SignIn onLogin={onLogin}/>
                                 :
-                                    <SignUp/>
+                                    <SignUp onLogin={onLogin}/>
                         }
                     </div>
                     <div className='pageAuth-thirdParty'>

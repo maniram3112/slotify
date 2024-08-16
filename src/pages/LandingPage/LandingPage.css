@@ -32,10 +32,17 @@
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
-.pageAuth img{
-    width: 30%;
-    height: auto;
+.pageAuth-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 2rem;
+}
+
+.pageAuth-logo img{
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
 }
 
 .pageAuth-heading {
