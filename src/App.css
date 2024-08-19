@@ -37,3 +37,9 @@
   background-color: #2c5f91;
   transform: scale(0.98);
 }
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

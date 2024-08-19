@@ -33,7 +33,7 @@ const LandingPage = ({authType, onLogin}) => {
                             <h3>Or Sign In with</h3>
                         </div>
                         <div className='thirdParty'>
-                            <div className='icons'><BsInstagram/></div>
+                            <div className='icons' onLogin={onLogin}><BsInstagram/></div>
                             <div className='icons'><BsGoogle/></div>
                             <div className='icons'><BsTwitterX/></div>
                         </div>
