@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import './App.css';
 import pages from './pages';
 
@@ -7,14 +7,36 @@ const {LandingPage, Home} = pages;
 
 function App() {
 
-  const[isLoggedIn, setIsLoggedIn] = useState(false);
+  const[isLoggedIn, setIsLoggedIn] = useState(() =>{
+    return localStorage.getItem('isLoggedIn') === 'true';
+  });
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const sessionToken = params.get('token');
+
+    if(sessionToken){
+      setIsLoggedIn(true);
+      localStorage.setItem('isLoggedIn', 'true');
+    }
+  }, [location])
 
   const handleLogin = () =>{
+    const sessionToken = generateToken();
     setIsLoggedIn(true);
+    localStorage.setItem('isLoggedIn', 'true');
+    navigate(`/home?token=${sessionToken}`)
+  }
+
+  const generateToken = () =>{
+    return Math.random().toString(36).substr(2);
   }
 
   return (
-    <Router>
+    // <Router>
       <div className="App">
         <Routes>
           <Route path='/' element={<LandingPage/>}/>
@@ -41,7 +63,7 @@ function App() {
           />
         </Routes>
       </div>
-    </Router>
+    // </Router>
   );
 }
 

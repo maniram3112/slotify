@@ -60,38 +60,6 @@
     width: 100%;
 }
 
-.pageAuth-thirdParty {
-    margin-top: 2rem;
-    width: 100%;
-    text-align: center;
-}
-
-.thirdParty-heading {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    color: #666;
-}
-
-.thirdParty {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    align-items: center;
-}
-
-.icons{
-    border: 1px solid #ddd;
-    padding: 0.5rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.icons:hover{
-    background-color: #f0f0f0;
-    border-color: #bbb;
-}
-
 .container{
     width: 100%;
 }
