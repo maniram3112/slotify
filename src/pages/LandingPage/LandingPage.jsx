@@ -1,11 +1,11 @@
 import React from 'react';
 import images from '../../assets';
-import components from '../../components';
+// import components from '../../components';
 import './LandingPage.css';
 import SignIn from './SignIn/SignIn';
 import SignUp from './SignUp/SignUp';
 
-const {ThirdParty} = components;
+// const {ThirdParty} = components;
 
 const LandingPage = ({authType, onLogin}) => {
     return (
@@ -30,7 +30,7 @@ const LandingPage = ({authType, onLogin}) => {
                                     <SignUp onLogin={onLogin}/>
                         }
                     </div>
-                    <ThirdParty/>
+                    {/* <ThirdParty/> */}
                 </div>
             </div>
         </div>

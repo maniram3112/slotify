@@ -6,8 +6,8 @@
 
 .thirdParty-heading {
     margin-bottom: 1rem;
-    font-size: 1rem;
-    color: #666;
+    font-size: 1.2rem;
+    color: #333;
 }
 
 .thirdParty-icons {
@@ -26,6 +26,6 @@
 }
 
 .icons:hover{
-    background-color: #f0f0f0;
+    background-color: #bbb7b7;
     border-color: #bbb;
 }
