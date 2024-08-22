@@ -25,7 +25,7 @@ const Footer = () => {
                     <ThirdParty />
                 </div>
             </div>
-            <hr />
+            {/* <hr /> */}
             <div className='footer-copyright'>
                 &copy; 2024 Slotify. All Rights Reserved.
             </div>

@@ -1,7 +1,7 @@
 .footer-container {
     background-color: rgb(255, 247, 247);
     color: black;
-    padding: 1rem 0.7rem;
+    padding: 1rem 2rem;
 }
 
 .footer-content {
@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    border-bottom: #333 1px solid;
 }
 .footer-logo {
     flex-direction: column;
