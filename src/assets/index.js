@@ -1,3 +1,4 @@
+import about from './about/about.jpg';
 import landingImg from './landing/landingImg.jpg';
 import logo1 from './logo/logo1.png';
 import logo2 from './logo/logo2.png';
@@ -9,7 +10,8 @@ const images = {
     logo2,
     logo3,
     landingImg,
-    nav2
+    nav2,
+    about
 }
 
 export default images;

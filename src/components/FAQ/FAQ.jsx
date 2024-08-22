@@ -17,7 +17,8 @@ const FAQ = () => {
     }
 
     return (
-        <div className='faq-container flex-center'>
+        <div className='faq-container flex-col'>
+            <h2 className='title'>FAQ's</h2>
             <div className='faqs-accordion'>
                 {faq.map((item, index) => (
                     <div

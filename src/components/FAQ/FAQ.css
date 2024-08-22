@@ -1,6 +1,7 @@
 .faq-container{
-    padding: 20px;
     background-color: #f4f4f4;
+    /* margin: 2rem; */
+    padding: 4rem;
 }
 
 .faqs-accordion{

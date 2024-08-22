@@ -1,22 +1,25 @@
 import React from 'react';
+import images from '../../assets';
 import constants from '../../constants';
 import './About.css';
 
-const {about} = constants;
+const { about } = constants;
 
 const About = () => {
     return (
-        <div className='about-container flex-center'>
-            <div className='about-info' id='#about'>
-            {about.map((item, index) => (
-                <div key={index} className='cards'>
-                    <h3>{item.title}</h3>
-                    <p>{item.content}</p>
-                </div>
-            ))}
+        <div className='about-container flex-col' id='#about'>
+            <h2 className='title'>About Us</h2>
+            <img className='about-img' src={images.about} alt='img' />
+            <div className='about-info'>
+                {about.map((item, index) => (
+                    <div key={index} className='cards'>
+                        <h3>{item.title}</h3>
+                        <p>{item.content}</p>
+                    </div>
+                ))}
             </div>
         </div>
-    )
+    );
 }
 
-export default About
+export default About;

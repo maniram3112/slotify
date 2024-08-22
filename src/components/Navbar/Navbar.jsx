@@ -2,25 +2,23 @@ import React from 'react';
 import images from '../../assets';
 import './Navbar.css';
 
+const Menu = () =>(
+    <>
+        <p><a href="#aboutUs">About Us</a></p>
+        <p><a href="#manage">Manage Slots</a></p>
+        <p><a href="#profile">Profile</a></p>
+        <p><a href="#contact">Contact Us</a></p>
+    </>
+)
+
 const Navbar = () => {
     return (
         <div className='navbar-container'>
             <div className='navbar-logo'>
-                <img src={images.logo3} alt='logo'/>
+                <img src={images.logo3} alt='#logo'/>
             </div>
             <div className='navbar-links'>
-                <div className='link' id='about'>
-                    <p>About us</p>
-                </div>
-                <div className='link' id='slots'>
-                    <p>Manage Slots</p>
-                </div>
-                <div className='link' id='profile'>
-                    <p>Profile</p>
-                </div>
-                <div className="link" id='contact'>
-                    <p>Contact Us</p>
-                </div>
+                <Menu/>
             </div>
         </div>
     )
