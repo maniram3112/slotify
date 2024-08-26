@@ -19,6 +19,7 @@
 
 .navbar-links {
     display: flex;
+    flex-direction: row;
     gap: 2rem;
 }
 
@@ -32,6 +33,13 @@
 .navbar-links p:hover {
     color: #ddd;
     text-decoration: underline;
+}
+
+.booking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Adding a hover effect for links */

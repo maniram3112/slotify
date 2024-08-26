@@ -1,0 +1,45 @@
+.book-container {
+    height: auto;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+.book-modal {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 90%;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+}
+
+.book-modal h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.custom-select {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #f8f8f8;
+}
+
+.custom-select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #ffffff;
+}

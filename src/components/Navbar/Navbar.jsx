@@ -1,5 +1,6 @@
 import React from 'react';
 import images from '../../assets';
+import Booking from '../Booking/Booking';
 import './Navbar.css';
 
 const Menu = () =>(
@@ -19,6 +20,9 @@ const Navbar = () => {
             </div>
             <div className='navbar-links'>
                 <Menu/>
+            </div>
+            <div className='booking'>
+                <Booking/>
             </div>
         </div>
     )
