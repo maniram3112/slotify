@@ -3,11 +3,10 @@ import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-
 import './App.css';
 import pages from './pages';
 
-const {LandingPage, Home} = pages;
+const { LandingPage, Home } = pages;
 
 function App() {
-
-  const[isLoggedIn, setIsLoggedIn] = useState(() =>{
+  const [isLoggedIn, setIsLoggedIn] = useState(() => {
     return localStorage.getItem('isLoggedIn') === 'true';
   });
 
@@ -18,52 +17,45 @@ function App() {
     const params = new URLSearchParams(location.search);
     const sessionToken = params.get('token');
 
-    if(sessionToken){
+    if (sessionToken) {
       setIsLoggedIn(true);
       localStorage.setItem('isLoggedIn', 'true');
+      localStorage.setItem('sessionToken', sessionToken);
+      navigate('/home');
     }
-  }, [location])
+  }, [location, navigate]);
 
-  const handleLogin = () =>{
+  const handleLogin = () => {
     const sessionToken = generateToken();
     setIsLoggedIn(true);
     localStorage.setItem('isLoggedIn', 'true');
-    navigate(`/home?token=${sessionToken}`)
-  }
+    localStorage.setItem('sessionToken', sessionToken);
+    navigate('/home');
+  };
 
-  const generateToken = () =>{
+  const generateToken = () => {
     return Math.random().toString(36).substr(2);
-  }
+  };
 
   return (
-    // <Router>
-      <div className="App">
-        <Routes>
-          <Route path='/' element={<LandingPage/>}/>
-          <Route path='/signin' element={
-            isLoggedIn
-              ?
-                <Navigate to='/home' />
-              :
-                <LandingPage authType="signin" onLogin={handleLogin}/>
-          } />
-          <Route path='/signup' element={
-            isLoggedIn
-              ?
-                <Navigate to='/home'/>
-              :
-                <LandingPage authType='signup' onLogin = {handleLogin}/>
-          } />
-
-          <Route
-            path='/home'
-            element={
-              isLoggedIn ? <Home/>:<Navigate to = '/signin'/>
-            }
-          />
-        </Routes>
-      </div>
-    // </Router>
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<LandingPage authType="signin" onLogin={handleLogin} />} />
+        <Route path="/signin" element={
+          isLoggedIn
+            ? <Navigate to="/home" />
+            : <LandingPage key="signin" authType="signin" onLogin={handleLogin} />
+        } />
+        <Route path="/signup" element={
+          isLoggedIn
+            ? <Navigate to="/home" />
+            : <LandingPage key="signup" authType="signup" onLogin={handleLogin} />
+        } />
+        <Route path="/home" element={
+          isLoggedIn ? <Home /> : <Navigate to="/signin" />
+        } />
+      </Routes>
+    </div>
   );
 }
 

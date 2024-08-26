@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../LandingPage.css'
 
-const SignUp = ({onLogin}) => {
+const SignUp = ({ onLogin }) => {
 
-    const handleSubmit = (target) => {
-        target.preventDefault();
+    const handleSubmit = (event) => {
+        event.preventDefault();
         onLogin();
     }
 
@@ -32,4 +32,4 @@ const SignUp = ({onLogin}) => {
     )
 }
 
-export default SignUp
+export default SignUp;
