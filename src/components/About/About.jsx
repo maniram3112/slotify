@@ -9,7 +9,7 @@ const About = () => {
     return (
         <div className='about-container flex-col' id='#about'>
             <h2 className='title'>About Us</h2>
-            <img className='about-img' src={images.about} alt='img' />
+            <img className='about-img bg-img' src={images.about} alt='img' />
             <div className='about-info'>
                 {about.map((item, index) => (
                     <div key={index} className='cards'>
