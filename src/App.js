@@ -3,7 +3,7 @@ import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-
 import './App.css';
 import pages from './pages';
 
-const { LandingPage, Home } = pages;
+const { LandingPage, Home, Slots } = pages;
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
@@ -54,6 +54,11 @@ function App() {
         <Route path="/home" element={
           isLoggedIn ? <Home /> : <Navigate to="/signin" />
         } />
+        <Route path="/slots" element={
+          <Slots/>
+        }
+        
+        />
       </Routes>
     </div>
   );
