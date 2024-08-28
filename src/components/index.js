@@ -3,6 +3,7 @@ import Booking from './Booking/Booking.jsx';
 import FAQ from './FAQ/FAQ.jsx';
 import Footer from './Footer/Footer';
 import Navbar from './Navbar/Navbar';
+import SlotsNavbar from './SlotsNavbar/SlotsNavbar';
 import ThirdParty from './ThirdParty/ThirdParty';
 
 const container = {
@@ -11,7 +12,8 @@ const container = {
     ThirdParty,
     Footer,
     About,
-    FAQ
+    FAQ,
+    SlotsNavbar
 }
 
 export default container;
