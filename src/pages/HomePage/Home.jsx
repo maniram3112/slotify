@@ -2,12 +2,12 @@ import React from "react";
 import components from '../../components';
 import './Home.css';
 
-const {Navbar, Footer, About, FAQ} = components;
+const {NavbarMain, Footer, About, FAQ} = components;
 
 const Home = () =>{
     return(
         <div className="home-container">
-            <Navbar/>
+            <NavbarMain/>
             <About/>
             <FAQ/>
             <Footer/>

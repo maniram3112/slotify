@@ -57,7 +57,6 @@ function App() {
         <Route path="/slots" element={
           <Slots/>
         }
-        
         />
       </Routes>
     </div>

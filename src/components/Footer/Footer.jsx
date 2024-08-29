@@ -5,10 +5,10 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <div className='footer-container' id='contact'>
+        <footer className='footer-container' id='contact'>
             <div className='footer-content'>
                 <div className='footer-logo flex-center'>
-                    <img src={images.logo2} alt='logo' id='#'/>
+                    <img src={images.logo2} alt='logo' />
                     <span>Why Wait? Slotify Your Day!</span>
                 </div>
                 <div className='footer-contact glass-effect'>
@@ -25,12 +25,11 @@ const Footer = () => {
                     <ThirdParty />
                 </div>
             </div>
-            {/* <hr /> */}
             <div className='footer-copyright'>
                 &copy; 2024 Slotify. All Rights Reserved.
             </div>
-        </div>
+        </footer>
     );
-}
+};
 
 export default Footer;

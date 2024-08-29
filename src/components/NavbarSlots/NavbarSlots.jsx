@@ -1,18 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import images from '../../assets';
 import Booking from '../Booking/Booking';
-import './Navbar.css';
+import './NavbarSlots.css';
 
 const Menu = () => (
     <>
-        <p><a href="#aboutUs">About Us</a></p>
+        <p><Link to="/home">Home</Link></p>
         <p><a href="#manage">Manage Slots</a></p>
         <p><a href="#profile">Profile</a></p>
         <p><a href="#contact">Contact Us</a></p>
     </>
 );
 
-const Navbar = () => {
+const NavbarSlots = () => {
     return (
         <div className='navbar-container'>
             <img className='nav-bg bg-img' src={images.nav2} alt='background' />
@@ -25,10 +26,10 @@ const Navbar = () => {
                 </div>
             </div>
             <div className='booking'>
-                <Booking/>
+                <Booking />
             </div>
         </div>
     );
 }
 
-export default Navbar;
+export default NavbarSlots;

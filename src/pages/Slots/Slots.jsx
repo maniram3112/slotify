@@ -3,14 +3,13 @@ import components from '../../components';
 import constants from '../../constants';
 import './Slots.css';
 
-const {SlotsNavbar, Booking, Footer} = components;
+const {NavbarSlots, Footer} = components;
 const {slotAvail} = constants;
 
 const Slots = () => {
     return (
         <div>
-            <SlotsNavbar/>
-            <Booking/>
+            <NavbarSlots/>
             <>
                 {slotAvail}
             </>
@@ -19,4 +18,4 @@ const Slots = () => {
     )
 }
 
-export default Slots
+export default Slots;

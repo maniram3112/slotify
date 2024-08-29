@@ -2,18 +2,18 @@ import About from './About/About.jsx';
 import Booking from './Booking/Booking.jsx';
 import FAQ from './FAQ/FAQ.jsx';
 import Footer from './Footer/Footer';
-import Navbar from './Navbar/Navbar';
-import SlotsNavbar from './SlotsNavbar/SlotsNavbar';
+import NavbarMain from './NavbarMain/NavbarMain';
+import NavbarSlots from './NavbarSlots/NavbarSlots';
 import ThirdParty from './ThirdParty/ThirdParty';
 
 const container = {
-    Navbar,
+    NavbarSlots,
     Booking,
     ThirdParty,
     Footer,
     About,
     FAQ,
-    SlotsNavbar
+    NavbarMain
 }
 
 export default container;

@@ -1,18 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import images from '../../assets';
-import './SlotsNavbar.css';
+import './NavbarMain.css';
 
 const Menu = () => (
     <>
-        <p><Link to="/home">Home</Link></p>
+        {/* <p><a href="#aboutUs">About Us</a></p> */}
         <p><a href="#manage">Manage Slots</a></p>
         <p><a href="#profile">Profile</a></p>
         <p><a href="#contact">Contact Us</a></p>
     </>
 );
 
-const SlotsNavbar = () => {
+const NavbarMain = () => {
+
+    const navigate = useNavigate();
+
+    const handleBookSlot = () =>{
+        navigate('/slots')
+    }
+
     return (
         <div className='slotsNav'>
             <div className='slotsNav-container flex-center'>
@@ -23,8 +30,16 @@ const SlotsNavbar = () => {
                     <Menu/>
                 </div>
             </div>
+            <div className='flex-center'>
+                <button
+                    className='custom-btn'
+                    onClick={handleBookSlot}
+                >
+                    Book Your Slot
+                </button>
+            </div>
         </div>
     )
 }
 
-export default SlotsNavbar
+export default NavbarMain
