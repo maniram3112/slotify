@@ -1,29 +1,88 @@
-
 const slotsAvail = [
     {
-        title: "What is Lorem Ipsum?",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        service: "Open New Account",
+        slots: [
+            { time: "10 am : 11:00 am", status: false },
+            { time: "11 am : 12:00 pm", status: true },
+            { time: "12 pm : 01:00 pm", status: false },
+            { time: "01 pm : 02:00 pm", status: false },
+            { time: "02 pm : 03:00 pm", status: true },
+            { time: "03 pm : 04:00 pm", status: false },
+            { time: "04 pm : 05:00 pm", status: false },
+            { time: "05 pm : 06:00 pm", status: true },
+            { time: "06 pm : 07:00 pm", status: false },
+        ],
     },
     {
-        title: "What is Lorem Ipsum?",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        service: "Apply for Credit Card",
+        slots: [
+            { time: "10 am : 11:00 am", status: false },
+            { time: "11 am : 12:00 pm", status: true },
+            { time: "12 pm : 01:00 pm", status: false },
+            { time: "01 pm : 02:00 pm", status: false },
+            { time: "02 pm : 03:00 pm", status: true },
+            { time: "03 pm : 04:00 pm", status: false },
+            { time: "04 pm : 05:00 pm", status: false },
+            { time: "05 pm : 06:00 pm", status: true },
+            { time: "06 pm : 07:00 pm", status: false },
+        ],
     },
     {
-        title: "What is Lorem Ipsum?",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        service: "Loan Consultation",
+        slots: [
+            { time: "10 am : 11:00 am", status: false },
+            { time: "11 am : 12:00 pm", status: true },
+            { time: "12 pm : 01:00 pm", status: false },
+            { time: "01 pm : 02:00 pm", status: false },
+            { time: "02 pm : 03:00 pm", status: true },
+            { time: "03 pm : 04:00 pm", status: false },
+            { time: "04 pm : 05:00 pm", status: false },
+            { time: "05 pm : 06:00 pm", status: true },
+            { time: "06 pm : 07:00 pm", status: false },
+        ],
     },
     {
-        title: "What is Lorem Ipsum?",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        service: "Fixed Deposit Management",
+        slots: [
+            { time: "10 am : 11:00 am", status: false },
+            { time: "11 am : 12:00 pm", status: true },
+            { time: "12 pm : 01:00 pm", status: false },
+            { time: "01 pm : 02:00 pm", status: false },
+            { time: "02 pm : 03:00 pm", status: true },
+            { time: "03 pm : 04:00 pm", status: false },
+            { time: "04 pm : 05:00 pm", status: false },
+            { time: "05 pm : 06:00 pm", status: true },
+            { time: "06 pm : 07:00 pm", status: false },
+        ],
     },
     {
-        title: "What is Lorem Ipsum?",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        service: "Meet Relationship Manager",
+        slots: [
+            { time: "10 am : 11:00 am", status: false },
+            { time: "11 am : 12:00 pm", status: true },
+            { time: "12 pm : 01:00 pm", status: false },
+            { time: "01 pm : 02:00 pm", status: false },
+            { time: "02 pm : 03:00 pm", status: true },
+            { time: "03 pm : 04:00 pm", status: false },
+            { time: "04 pm : 05:00 pm", status: false },
+            { time: "05 pm : 06:00 pm", status: true },
+            { time: "06 pm : 07:00 pm", status: false },
+        ],
     },
     {
-        title: "What is Lorem Ipsum?",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        service: "Update KYC Information",
+        slots: [
+            { time: "10 am : 11:00 am", status: false },
+            { time: "11 am : 12:00 pm", status: true },
+            { time: "12 pm : 01:00 pm", status: false },
+            { time: "01 pm : 02:00 pm", status: false },
+            { time: "02 pm : 03:00 pm", status: true },
+            { time: "03 pm : 04:00 pm", status: false },
+            { time: "04 pm : 05:00 pm", status: false },
+            { time: "05 pm : 06:00 pm", status: true },
+            { time: "06 pm : 07:00 pm", status: false },
+        ],
     },
-]
+];
 
 export default slotsAvail;

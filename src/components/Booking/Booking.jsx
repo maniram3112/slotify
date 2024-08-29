@@ -74,8 +74,8 @@ const Booking = () => {
                 </div>
                 <div className='form-group'>
                     <select 
-                        className='custom-select' 
-                        value={selectedDate} 
+                        className='custom-select'
+                        value={selectedDate}
                         onChange={handleDateChange}
                     >
                         <option value="">Select Date</option>
