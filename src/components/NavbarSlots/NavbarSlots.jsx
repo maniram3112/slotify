@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import images from '../../assets';
-import Booking from '../Booking/Booking';
+// import Booking from '../Booking/Booking';
 import './NavbarSlots.css';
 
 const Menu = () => (
@@ -16,18 +16,18 @@ const Menu = () => (
 const NavbarSlots = () => {
     return (
         <div className='navbar-container'>
-            <img className='nav-bg bg-img' src={images.nav2} alt='background' />
+            {/* <img className='nav-bg bg-img' src={images.nav2} alt='background' /> */}
             <div className='navbar-content'>
                 <div className='navbar-logo'>
-                    <img src={images.logo3} alt='logo'/>
+                    <img src={images.logo2} alt='logo'/>
                 </div>
                 <div className='navbar-links'>
                     <Menu/>
                 </div>
             </div>
-            <div className='booking'>
+            {/* <div className='booking'>
                 <Booking />
-            </div>
+            </div> */}
         </div>
     );
 }

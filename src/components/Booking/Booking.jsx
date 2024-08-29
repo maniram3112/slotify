@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import constants from '../../constants';
+import CheckSlots from '../CheckSlots/CheckSlots';
 import './Booking.css';
+
+const {slotsAvail} = constants
 
 const Booking = () => {
     const [currentDate] = useState(new Date());
@@ -8,8 +11,8 @@ const Booking = () => {
     const [selectedService, setSelectedService] = useState('');
     const [selectedDate, setSelectedDate] = useState('');
     const [error, setError] = useState('');
+    const [availableSlots, setAvailableSlots] = useState([]);
 
-    const navigate = useNavigate();
 
     useEffect(() => {
         const generateDates = () => {
@@ -47,18 +50,26 @@ const Booking = () => {
 
     const handleCheckAvailability = () => {
         if (selectedService && selectedDate) {
-            navigate('/slots');
+            const selectedSlots = slotsAvail.find(service => service.service === selectedService);
+            if(selectedSlots){
+                setAvailableSlots(selectedSlots.slots);
+            }
+            setError('');
         } else {
             setError('Please select both a service and a date.');
         }
     };
 
+    const handleSlotClick = (slot) =>{
+        console.log(`Selected Slot: ${slot.time}`)
+    }
+
     return (
-        <div className='book-container flex-center'>
+        <div className='book-container flex-col'>
             <div className='book-modal'>
                 <h2>Book Your Appointment</h2>
                 <div className='form-group'>
-                    <select 
+                    <select
                         className='custom-select' 
                         value={selectedService} 
                         onChange={handleServiceChange}
@@ -73,7 +84,7 @@ const Booking = () => {
                     </select>
                 </div>
                 <div className='form-group'>
-                    <select 
+                    <select
                         className='custom-select'
                         value={selectedDate}
                         onChange={handleDateChange}
@@ -87,10 +98,18 @@ const Booking = () => {
                     </select>
                 </div>
                 {error && <p className='error-message'>{error}</p>}
-                <button className='custom-btn' onClick={handleCheckAvailability}>
-                    Check Availability
-                </button>
+                <div className='flex-center'>
+                    <button className='custom-btn' onClick={handleCheckAvailability}>
+                        Check Availability
+                    </button>
+                </div>
             </div>
+
+            {
+                availableSlots.length > 0 && (
+                    <CheckSlots slots={availableSlots} onSlotClick={handleSlotClick} />
+                )
+            }
         </div>
     );
 };
