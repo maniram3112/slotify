@@ -1,0 +1,86 @@
+.manage {
+    background: url('../../assets/history/bankingHistory.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.manage-container {
+    padding: 10px;
+}
+
+.tabs {
+    margin-bottom: 15px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    text-align: center;
+}
+
+.tab.active {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+}
+
+.manage-upcoming,
+.manage-completed {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 5%;
+}
+
+.manage-upcoming h3,
+.manage-completed h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.slot-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.slot-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.slots-action {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    cursor: pointer;
+    transition: color 0.2s;
+    font-size: 18px;
+}
+
+.icon.edit:hover {
+    color: #ffa726;
+}
+
+.icon.delete:hover {
+    color: #f44336;
+}

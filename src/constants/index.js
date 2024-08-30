@@ -1,11 +1,13 @@
-import about from './data/about';
-import faq from './data/faq';
-import slotsAvail from './data/slotAvail';
+import about from './about';
+import faq from './faq';
+import slotsAvail from './slotAvail';
+import slotsHistory from './slotsHistory';
 
 const constants = {
     about,
     faq,
-    slotsAvail
+    slotsAvail,
+    slotsHistory
 }
 
 export default constants

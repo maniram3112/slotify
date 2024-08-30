@@ -1,12 +1,12 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import images from '../../assets';
 import './NavbarMain.css';
 
 const Menu = () => (
     <>
         {/* <p><a href="#aboutUs">About Us</a></p> */}
-        <p><a href="#manage">Manage Slots</a></p>
+        <p><Link to='/manage-slots'>Manage Slots</Link></p>
         <p><a href="#profile">Profile</a></p>
         <p><a href="#contact">Contact Us</a></p>
     </>
