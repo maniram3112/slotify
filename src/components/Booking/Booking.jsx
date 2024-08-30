@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import images from '../../assets';
 import constants from '../../constants';
 import CheckSlots from '../CheckSlots/CheckSlots';
 import './Booking.css';
@@ -6,6 +7,7 @@ import './Booking.css';
 const {slotsAvail} = constants
 
 const Booking = () => {
+
     const [currentDate] = useState(new Date());
     const [availableDates, setAvailableDates] = useState([]);
     const [selectedService, setSelectedService] = useState('');
@@ -60,56 +62,55 @@ const Booking = () => {
         }
     };
 
-    const handleSlotClick = (slot) =>{
-        console.log(`Selected Slot: ${slot.time}`)
-    }
-
     return (
-        <div className='book-container flex-col'>
-            <div className='book-modal'>
-                <h2>Book Your Appointment</h2>
-                <div className='form-group'>
-                    <select
-                        className='custom-select' 
-                        value={selectedService} 
-                        onChange={handleServiceChange}
-                    >
-                        <option value="">Select Service</option>
-                        <option>Open New Account</option>
-                        <option>Apply for Credit Card</option>
-                        <option>Loan Consultation</option>
-                        <option>Fixed Deposit Management</option>
-                        <option>Meet Relationship Manager</option>
-                        <option>Update KYC Information</option>
-                    </select>
+        <div className='containerc flex-center'>
+            <img src={images.nav2} alt='red carpet img' className='bg bg-img'/>
+            <div className='book-container flex-col'>
+                <div className='book-modal '>
+                    <h2>Book Your Appointment</h2>
+                    <div className='form-group'>
+                        <select
+                            className='custom-select' 
+                            value={selectedService} 
+                            onChange={handleServiceChange}
+                        >
+                            <option value="">Select Service</option>
+                            <option>Open New Account</option>
+                            <option>Apply for Credit Card</option>
+                            <option>Loan Consultation</option>
+                            <option>Fixed Deposit Management</option>
+                            <option>Meet Relationship Manager</option>
+                            <option>Update KYC Information</option>
+                        </select>
+                    </div>
+                    <div className='form-group'>
+                        <select
+                            className='custom-select'
+                            value={selectedDate}
+                            onChange={handleDateChange}
+                        >
+                            <option value="">Select Date</option>
+                            {availableDates.map((date, index) => (
+                                <option key={index} value={date.toLocaleDateString()}>
+                                    {date.toLocaleDateString()}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
+                    {error && <p className='error-message'>{error}</p>}
+                    <div className='flex-center'>
+                        <button className='custom-btn' onClick={handleCheckAvailability}>
+                            Check Availability
+                        </button>
+                    </div>
                 </div>
-                <div className='form-group'>
-                    <select
-                        className='custom-select'
-                        value={selectedDate}
-                        onChange={handleDateChange}
-                    >
-                        <option value="">Select Date</option>
-                        {availableDates.map((date, index) => (
-                            <option key={index} value={date.toLocaleDateString()}>
-                                {date.toLocaleDateString()}
-                            </option>
-                        ))}
-                    </select>
-                </div>
-                {error && <p className='error-message'>{error}</p>}
-                <div className='flex-center'>
-                    <button className='custom-btn' onClick={handleCheckAvailability}>
-                        Check Availability
-                    </button>
-                </div>
-            </div>
 
-            {
-                availableSlots.length > 0 && (
-                    <CheckSlots slots={availableSlots} onSlotClick={handleSlotClick} />
-                )
-            }
+                {
+                    availableSlots.length > 0 && (
+                        <CheckSlots slots={availableSlots} selectedService={selectedService}/>
+                    )
+                }
+            </div>
         </div>
     );
 };

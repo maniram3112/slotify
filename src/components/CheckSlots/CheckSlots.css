@@ -3,7 +3,7 @@
     text-align: center;
 }
 
-.slots-container h3{
+.slots-container h3 {
     margin-bottom: 18px;
 }
 
@@ -32,4 +32,60 @@
     background-color: #f44336;
     color: #111;
     cursor: not-allowed;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h4, p{
+    margin-bottom: 0.5rem;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.confirm-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.exit-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.confirm-btn:hover,
+.exit-btn:hover {
+    opacity: 0.8;
 }
