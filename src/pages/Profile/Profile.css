@@ -1,0 +1,125 @@
+.profile-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.profile-container:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-title {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.profile-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 120px; /* Adjust the size of the icon */
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+.profile-img:hover {
+    color: #2980b9;
+}
+
+.user-info, .security-settings, .service-history {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.user-info:hover, .security-settings:hover, .service-history:hover {
+    transform: translateY(-5px);
+    background-color: #f0f0f0;
+}
+
+.user-info h2, .security-settings h2, .service-history h2 {
+    margin-bottom: 15px;
+    color: #34495e;
+    font-size: 22px;
+    font-weight: 700;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.user-info p, .security-settings p, .service-history p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-info p strong, .security-settings p strong, .service-history p strong {
+    color: #2c3e50;
+}
+
+.service-history p:last-child {
+    cursor: pointer;
+    color: #2980b9;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.clickable-activity {
+    cursor: pointer;
+    color: #2980b9;
+    transition: color 0.3s ease;
+}
+
+.clickable-activity:hover {
+    color: #1a5276;
+    text-decoration: underline;
+}
+
+.service-history p:last-child:hover {
+    color: #1a5276;
+    transform: translateX(5px);
+}
+
+.security-settings p:last-child {
+    cursor: pointer;
+    color: #2980b9;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logout-button {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+}

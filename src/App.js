@@ -3,7 +3,7 @@ import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-
 import './App.css';
 import pages from './pages';
 
-const { LandingPage, Home, Slots, ManageSlots } = pages;
+const { LandingPage, Home, Slots, ManageSlots, Profile } = pages;
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
@@ -62,6 +62,9 @@ function App() {
           <ManageSlots/>
         }
         />
+        <Route path='/profile' element={
+          <Profile/>
+        }/>
       </Routes>
     </div>
   );

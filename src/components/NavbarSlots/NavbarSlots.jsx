@@ -7,7 +7,7 @@ const Menu = () => (
     <>
         <p><Link to="/home">Home</Link></p>
         <p><Link to='/manage-slots'>Manage Slots</Link></p>
-        <p><a href="#profile">Profile</a></p>
+        <p><Link to='/profile'>Profile</Link></p>
         <p><a href="#contact">Contact Us</a></p>
     </>
 );
