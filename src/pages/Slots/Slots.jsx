@@ -2,13 +2,13 @@ import React from 'react';
 import components from '../../components';
 import './Slots.css';
 
-const {NavbarSlots, Footer, Booking} = components;
+const {Navbar, Footer, Booking} = components;
 
 const Slots = () => {
 
     return (
         <div>
-            <NavbarSlots />
+            <Navbar/>
             <Booking/>
             <Footer />
         </div>

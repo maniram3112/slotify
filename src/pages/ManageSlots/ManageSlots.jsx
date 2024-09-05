@@ -4,7 +4,7 @@ import components from '../../components';
 import constants from '../../constants';
 import './ManageSlots.css';
 
-const {NavbarSlots, Footer} = components;
+const {Navbar, Footer} = components;
 const {slotsHistory} = constants;
 
 const ManageSlots = () => {
@@ -29,7 +29,7 @@ const ManageSlots = () => {
 
     return (
         <div className='manage'>
-            <NavbarSlots/>
+            <Navbar/>
             <div className='manage-container'>
                 <div className='tabs flex-center'>
                     <button

@@ -11,18 +11,14 @@ const Footer = () => {
                     <img src={images.logo2} alt='logo' />
                     <span>Why Wait? Slotify Your Day!</span>
                 </div>
+                <div className='footer-links'>
+                    <ThirdParty />
+                </div>
                 <div className='footer-contact glass-effect'>
                     <form>
                         <h2>Help Us Improve</h2>
-                        <input
-                            type='text'
-                            placeholder='Your Opinion Matters'
-                        />
-                        <button className='custom-btn'>Send</button>
+                        <button className='custom-btn'>Give Your Feedback</button>
                     </form>
-                </div>
-                <div className='footer-links'>
-                    <ThirdParty />
                 </div>
             </div>
             <div className='footer-copyright'>

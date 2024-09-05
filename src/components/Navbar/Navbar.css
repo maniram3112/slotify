@@ -1,0 +1,48 @@
+.navbar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 2rem 2rem;
+    position: relative;
+    z-index: 100;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-logo img {
+    width: 14%;
+    height: auto;
+    cursor: pointer;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.navbar-links p {
+    margin: 0;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-wrap: nowrap;
+}
+
+.navbar-links p a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-links p a:hover,
+.navbar-links p:hover {
+    color: #555;
+}

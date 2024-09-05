@@ -1,13 +1,15 @@
 .about-container {
     padding: 20px;
-    background-color: #e5e5e5;
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
+    /* background-color: #e5e5e5; */
+    /* position: relative; */
+    /* height: 100vh; */
+    z-index: -1;
 }
 
 .about-img {
-    opacity: 0.5;
+    z-index: -1;
+    filter: blur(2px);
+    opacity: 0.6;
 }
 
 .about-info {

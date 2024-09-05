@@ -63,7 +63,7 @@ const Booking = () => {
     };
 
     return (
-        <div className='containerc flex-center'>
+        <div className='container flex-center'>
             <img src={images.nav2} alt='red carpet img' className='bg bg-img'/>
             <div className='book-container flex-col'>
                 <div className='book-modal '>
