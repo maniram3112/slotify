@@ -1,7 +1,7 @@
 .footer-container {
     background-color: rgb(219, 217, 217);
     color: black;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
 }
 
 .footer-content {
@@ -28,23 +28,23 @@
     font-weight: bold;
 }
 
-.footer-contact {
+/* .footer-contact {
     margin: 20px 0;
-    padding: 20px;
+    padding: 5px;
     border-radius: 15px;
     position: relative;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.3);
-}
+} */
 
 .footer-contact h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 
-.footer-contact input {
+/* .footer-contact input {
     width: 80%;
     padding: 10px;
     margin: 10px 0;
@@ -52,7 +52,7 @@
     border: none;
     font-size: 1rem;
     border: #333 0.5px solid;
-}
+} */
 
 .footer-links {
     margin: 20px 0;

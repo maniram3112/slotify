@@ -5,7 +5,7 @@ const CheckSlots = ({ slots = [], selectedService }) => {
     const [showBookingModal, setShowBookingModal] = useState(false);
     const [showSuccessModal, setShowSuccessModal] = useState(false);
     const [selectedSlot, setSelectedSlot] = useState(null);
-    const [updatedSlots, setUpdatedSlots] = useState(slots); // State to handle updated slots
+    const [updatedSlots, setUpdatedSlots] = useState(slots);
 
     const handleSlotClick = (slot) => {
         setSelectedSlot(slot);
@@ -13,7 +13,6 @@ const CheckSlots = ({ slots = [], selectedService }) => {
     };
 
     const handleConfirmBooking = () => {
-        // Update the slot status to unavailable
         const updated = updatedSlots.map((slot) =>
         slot.time === selectedSlot.time ? { ...slot, status: false } : slot
         );

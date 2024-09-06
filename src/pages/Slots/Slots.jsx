@@ -1,6 +1,5 @@
 import React from 'react';
 import components from '../../components';
-import './Slots.css';
 
 const {Navbar, Footer, Booking} = components;
 
