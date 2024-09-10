@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Slotify
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Slotify is a web application designed to streamline the process of booking slots and appointments for bank-related tasks. The platform offers a user-friendly interface, allowing users to easily manage their bookings. The app is built using React.js with routing and authentication for seamless navigation between the landing, sign-in, and sign-up pages.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+Visit the live version of the website [here](https://slotify-gilt.vercel.app/).
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Landing Page:** A visually appealing landing page with an image on the left side covering 70% of the screen, introducing the app.
+- **User Authentication:** Secure sign-in and sign-up forms for user authentication and management.
+- **Slot Booking:** Book available slots for various bank-related services, ensuring easy appointment scheduling.
+- **Date Restrictions:** Slot booking excludes Sundays and second Saturdays, aligning with standard banking schedules.
+- **Responsive Design:** Fully responsive design, ensuring usability across different devices.
+- **Navigation:** Intuitive navigation with React Router integration.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **React.js:** Frontend framework for building the user interface.
+- **React Router:** For client-side routing and navigation between components.
+- **Vercel:** Hosting platform for deploying the application.
+- **CSS:** Styling components using CSS for a clean and aesthetic look.
+- **React Icons:** For visually appealing icons throughout the app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To run this project locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/slotify.git
+   ```
+   
+2. **Navigate to the project directory:**
+   ```bash
+   cd slotify
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Start the development server:**
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+5. Open your browser and visit `http://localhost:3000` to see the application in action.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How to Use
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Visit the Site:** Go to the [Slotify website](https://slotify-gilt.vercel.app/).
+2. **Sign In/Sign Up:** Create an account or sign in if you already have one.
+3. **Book a Slot:** Select your desired service, date, and time slot from the available options.
+4. **Manage Appointments:** View, modify, or cancel your booked slots as needed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contribution
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contributions are welcome! If you'd like to contribute to the project, follow these steps:
 
-## Learn More
+1. Fork the repository.
+2. Create a new branch for your feature (`git checkout -b feature-name`).
+3. Make your changes and commit (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Open a Pull Request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any queries or feedback, feel free to contact the project maintainers at [maniramthota12@gmail.com].
